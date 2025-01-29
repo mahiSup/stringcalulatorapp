@@ -36,7 +36,7 @@ class HomeScreenState extends State<HomeScreen> {
   void _calculateSum() {
     setState(() {
       _errorMessage = '';
-      final String input = '1;2,3';
+      final String input = _controller.text;
       try {
         final sum = calculator.add(input);
         _result = 'Sum: $sum';
