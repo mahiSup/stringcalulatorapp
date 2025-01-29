@@ -26,11 +26,8 @@ class StringCalculator {
     }
     if (negatives.isNotEmpty) {
       throw FormatException(
-          "Negative numbers not allowed:< ${negatives.join(',')}>");
+          "Negative numbers not allowed:${negatives.join(',')}");
     }
     return sum;
   }
 }
-
-
-
